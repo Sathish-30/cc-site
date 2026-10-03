@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+<meta charset="utf-8">
+<title>Credit cards, explained simply (India, ₹) | Limits, interest, fees, timing</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="A plain-language guide to credit cards in India: how they work, credit limit and utilisation, billing cycle and due dates, interest, fees, CIBIL score, rewards, EMI and safety. With simple ₹ examples and calculators.">
+<meta name="theme-color" content="#2f6fed">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Credit cards, explained simply">
+<meta property="og:description" content="How credit cards really work in India: interest-free days, minimum due traps, fees, CIBIL score and safety. Simple ₹ examples and calculators.">
+<meta property="og:image" content="/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Credit cards, explained simply: a plain-language guide for India">
+<meta property="og:locale" content="en_IN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Credit cards, explained simply">
+<meta name="twitter:description" content="Interest-free days, minimum due traps, fees, CIBIL score and safety, in plain words with ₹ examples.">
+<meta name="twitter:image" content="/og.png">
+<!-- After deploying, replace "/og.png" above with the full URL, e.g. https://your-site.vercel.app/og.png, and add: <link rel="canonical" href="https://your-site.vercel.app/"> -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect x='4' y='14' width='56' height='36' rx='6' fill='%232f6fed'/%3E%3Crect x='4' y='22' width='56' height='7' fill='%2312302f'/%3E%3Crect x='12' y='37' width='16' height='5' rx='2' fill='%23fff'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f5f7f6;--surf:#fff;--ink:#12302f;--mut:#5b706e;--line:#d8e1df;--c1:#2f6fed;--c2:#d98200;--c3:#c2185b;--bad:#b3261e;--good:#1f7a55;color-scheme:light}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1a19;--surf:#152524;--ink:#e6f0ee;--mut:#9bb1ae;--line:#274240;--c1:#6c9bff;--c2:#f0a63a;--c3:#f06fa2;--bad:#ff8a80;--good:#5fd39a;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0e1a19;--surf:#152524;--ink:#e6f0ee;--mut:#9bb1ae;--line:#274240;--c1:#6c9bff;--c2:#f0a63a;--c3:#f06fa2;--bad:#ff8a80;--good:#5fd39a;color-scheme:dark}
+*{box-sizing:border-box}
+html{scroll-padding-top:calc(64px + env(safe-area-inset-top,0px));scroll-behavior:smooth}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 "Source Sans 3",system-ui,sans-serif;padding-bottom:env(safe-area-inset-bottom,0px);-webkit-text-size-adjust:100%}
+main{max-width:860px;margin:0 auto;padding:36px 20px 40px}
+h1,h2,h3{font-family:"Bricolage Grotesque",system-ui,sans-serif;line-height:1.15;margin:0}
+h1{font-size:clamp(2rem,6vw,3.2rem);font-weight:800;max-width:16ch}
+h2{font-size:1.6rem;margin:56px 0 12px}
+h3{font-size:1.05rem;margin-bottom:4px}
+p{max-width:68ch;margin:0 0 12px}
+a{color:var(--c1)}
+.lead{color:var(--mut);font-size:1.15rem;margin-top:14px}
+.box{background:var(--surf);border:1px solid var(--line);border-radius:10px;padding:18px 20px}
+.terms{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px;margin-top:16px}
+.terms p{margin:0;color:var(--mut);font-size:.97rem}
+.terms ul{margin:6px 0 0;color:var(--mut);font-size:.97rem}
+.bar{display:flex;height:46px;border-radius:8px;overflow:hidden;margin:18px 0 6px;font-size:.85rem;font-weight:600}
+.bar div{display:flex;align-items:center;justify-content:center;color:#fff;padding:0 6px;text-align:center}
+.b1{background:#3b8a7a;flex:30}.b2{background:#c47f00;flex:20}
+.ticks{display:flex;justify-content:space-between;color:var(--mut);font-size:.88rem;gap:8px}
+.ex{border-left:4px solid var(--c1);padding-left:16px;margin:16px 0}
+.ex.alt{border-color:var(--c3)}
+table{width:100%;border-collapse:collapse;font-size:.95rem}
+th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line)}
+.wrap{overflow-x:auto}
+td:first-child{white-space:nowrap}
+.dot{display:inline-block;width:11px;height:11px;border-radius:50%;margin-right:7px}
+.ctl{display:flex;flex-wrap:wrap;gap:22px;align-items:center;margin:14px 0}
+.ctl label{font-weight:600}
+input[type=range]{width:min(320px,100%);accent-color:var(--c1);vertical-align:middle}
+input[type=number]{width:64px;font:inherit;padding:4px 6px;border:1px solid var(--line);border-radius:6px;background:var(--surf);color:var(--ink)}
+input[type=number].wide{width:110px}
+input[type=checkbox]{accent-color:var(--c1);width:18px;height:18px;vertical-align:middle}
+.res{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px}
+.res .box{border-top-width:5px}
+.res.r .best{outline:2px solid var(--ink)}
+.big{font-family:"Bricolage Grotesque",sans-serif;font-size:2.3rem;font-weight:800;line-height:1}
+.tag{font-size:.8rem;font-weight:700;background:var(--ink);color:var(--bg);border-radius:20px;padding:2px 9px;margin-left:6px}
+.strip{display:grid;grid-template-columns:repeat(31,1fr);gap:3px;margin:12px 0 4px}
+.strip button{all:unset;cursor:pointer;height:34px;border-radius:4px;display:flex;align-items:center;justify-content:center;font-size:.72rem;font-weight:700;color:#fff}
+.strip button:focus-visible{outline:2px solid var(--ink);outline-offset:1px}
+.strip button.sel{box-shadow:0 0 0 2px var(--bg),0 0 0 4px var(--ink)}
+.legend{display:flex;gap:16px;flex-wrap:wrap;font-size:.92rem;color:var(--mut)}
+.note{color:var(--mut);font-size:.92rem}
+ul{padding-left:20px;max-width:68ch}li{margin-bottom:6px}
+.warn{color:var(--bad);font-weight:600}
+.good{color:var(--good);font-weight:600}
+/* sticky table of contents */
+.toc{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0px)}
+@supports not (background:color-mix(in srgb,red 50%,blue)){.toc{background:var(--bg)}}
+.toc .in{max-width:860px;margin:0 auto;display:flex;align-items:center;gap:8px;padding:8px 12px 8px 20px}
+.toc ol{position:relative;list-style:none;margin:0;padding:2px 0;display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;flex:1;-webkit-overflow-scrolling:touch}
+.toc ol::-webkit-scrollbar{display:none}
+.toc li{margin:0;flex:none}
+.toc a{display:block;padding:6px 11px;border-radius:20px;border:1px solid var(--line);background:var(--surf);color:var(--ink);text-decoration:none;font-size:.88rem;font-weight:600;white-space:nowrap}
+.toc a:hover,.toc a:focus-visible,.toc a.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.theme{flex:none;font:inherit;font-size:1rem;cursor:pointer;border:1px solid var(--line);background:var(--surf);color:var(--ink);border-radius:20px;width:38px;height:34px}
+.skip{position:absolute;left:-999px}.skip:focus{left:12px;top:12px;z-index:20;background:var(--surf);padding:6px 10px;border-radius:6px}
+/* utilisation bars */
+.ubar{height:28px;border-radius:8px;background:var(--line);overflow:hidden;margin:6px 0 2px}
+.ubar span{display:flex;align-items:center;height:100%;padding-left:10px;color:#fff;font-size:.85rem;font-weight:700}
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px;margin-top:14px}
+.two .box h3{margin-bottom:8px}
+.pill{display:inline-block;font-size:.8rem;font-weight:700;border-radius:20px;padding:1px 9px;color:#fff}
+details{background:var(--surf);border:1px solid var(--line);border-radius:10px;padding:12px 18px;margin-bottom:10px;max-width:none}
+summary{cursor:pointer;font-weight:600;font-family:"Bricolage Grotesque",system-ui,sans-serif}
+details p{margin:10px 0 2px;color:var(--mut)}
+.calc .ctl{gap:16px 22px}
+.out{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin-top:6px}
+.out .box{padding:14px 16px}
+.out .big{font-size:1.9rem}
+footer{max-width:860px;margin:0 auto;padding:22px 20px 40px;border-top:1px solid var(--line);color:var(--mut);font-size:.9rem}
+@media(max-width:560px){.strip button{font-size:.6rem;height:30px}.strip{gap:2px}h2{margin-top:44px}.bar{font-size:.75rem}}
+</style>
+</head>
+<body>
+<a class="skip" href="#basics">Skip to content</a>
+<nav class="toc" aria-label="Table of contents"><div class="in">
+<ol>
+<li><a href="#basics">Basics</a></li>
+<li><a href="#limit">Credit limit</a></li>
+<li><a href="#cycle">Billing cycle</a></li>
+<li><a href="#calculator">Which card?</a></li>
+<li><a href="#interest">Interest</a></li>
+<li><a href="#fees">Fees</a></li>
+<li><a href="#score">Credit score</a></li>
+<li><a href="#rewards">Rewards &amp; EMI</a></li>
+<li><a href="#safety">Safety</a></li>
+<li><a href="#fit">Right for you?</a></li>
+<li><a href="#habits">Habits</a></li>
+<li><a href="#faq">FAQ</a></li>
+</ol>
+<button class="theme" id="theme" type="button" aria-label="Switch light or dark mode" title="Light / dark">◐</button>
+</div></nav>
+<main>
+<h1>Credit cards, explained simply</h1>
+<p class="lead">A credit card can give you free short-term credit, rewards and a better credit score, or a costly debt trap. The difference is a few simple rules. Here they are, in plain words with ₹ examples.</p>
+
+<h2 id="basics">What a credit card actually is</h2>
+<p>A credit card lets you <strong>spend the bank's money now and pay it back later</strong>. Every swipe, tap or online payment is a small, short-term loan.</p>
+<div class="terms">
+<div class="box"><h3>Debit card</h3><p>Spends <strong>your own money</strong>, straight from your bank account. If the balance is ₹0, the payment fails.</p></div>
+<div class="box"><h3>Credit card</h3><p>Spends <strong>the bank's money</strong>, up to a limit. You get a bill every month and must pay it back.</p></div>
+<div class="box"><h3>Who issues it</h3><p>Banks and some finance companies (NBFCs), usually on a network like Visa, Mastercard, RuPay or Amex. The issuer sets your limit, fees and interest.</p></div>
+<div class="box"><h3>The deal</h3><p>Pay the full bill on time and the loan costs you <strong>nothing</strong>. Pay late or only partly and it gets expensive, fast.</p></div>
+</div>
+
+<h2 id="limit">Credit limit and utilisation</h2>
+<p>Your <strong>credit limit</strong> is the most the bank will let you owe at one time. If your limit is ₹1,00,000 and you've spent ₹40,000, you can spend only ₹60,000 more until you pay.</p>
+<p><strong>Credit utilisation</strong> is how much of your limit you're using. Credit bureaus watch it. Using a big chunk of your limit every month can look like you depend on credit, and can pull your score down.</p>
+<div class="two">
+<div class="box"><h3>Healthy: ₹25,000 of ₹1,00,000</h3><div class="ubar"><span style="width:25%;background:var(--good)">25%</span></div><p class="note">Under about 30%. Looks well managed.</p></div>
+<div class="box"><h3>Risky: ₹80,000 of ₹1,00,000</h3><div class="ubar"><span style="width:80%;background:var(--bad)">80%</span></div><p class="note">Close to the limit. Can hurt your score, even if you pay in full.</p></div>
+</div>
+<p class="note" style="margin-top:12px">Tip: try to keep usage <strong>under about 30%</strong> of your limit. For a ₹50,000 limit, that's ₹15,000. If you spend more, paying part of it before the statement date lowers the amount that gets reported.</p>
+
+<h2 id="cycle">The cycle in one picture</h2>
+<p>A card runs in repeating cycles. The bank adds up everything you spent in a cycle, issues a statement, and gives you a few weeks to pay it. Every purchase is an interest-free loan for a limited time, and how long depends on when you spend relative to your statement date.</p>
+<div class="bar"><div class="b1">Billing cycle (~30 days): you spend</div><div class="b2">Grace period (~20 days): you pay</div></div>
+<div class="ticks"><span>Previous statement date</span><span>Next statement date</span><span>Due date</span></div>
+
+<div class="terms">
+<div class="box"><h3>Statement date</h3><p>The day the bank closes the cycle and totals your spending. Purchases after this day go into the next statement.</p></div>
+<div class="box"><h3>Due date</h3><p>The last day to pay without interest. It usually falls 15 to 20 days after the statement date, and your bank sets it.</p></div>
+<div class="box"><h3>Total amount due</h3><p>The full statement balance. Paying this by the due date means zero interest on those purchases.</p></div>
+<div class="box"><h3>Minimum amount due</h3><p>A small slice (often about 5%). Paying only this avoids a late fee but starts interest on the rest, commonly 3.5% a month or more.</p></div>
+</div>
+
+<h2>Example: one card, two purchase days</h2>
+<p>Take a card with a statement on the <strong>10th</strong> and a due date 20 days later (the <strong>30th</strong>).</p>
+<div class="ex"><h3>Buy on the 11th, the day after the statement</h3><p>It lands in the next statement (10th of next month), due the 30th of next month. You get about <strong>50 days</strong> before paying. This is the best case.</p></div>
+<div class="ex alt"><h3>Buy on the 9th, the day before the statement</h3><p>It lands in this month's statement, due the 30th. You get only about <strong>21 days</strong>. This is the worst case.</p></div>
+<p class="note">Rule of thumb: spend on the card whose statement date just passed, and your payment is pushed as far away as possible.</p>
+
+<h2>Your three cards</h2>
+<div class="wrap"><table>
+<tr><th>Card</th><th>Statement date</th><th>Due date (20-day gap)</th><th>Best day to start spending</th></tr>
+<tr><td><span class="dot" style="background:var(--c1)"></span>Card 1</td><td>1st of every month</td><td>21st</td><td>2nd</td></tr>
+<tr><td><span class="dot" style="background:var(--c2)"></span>Card 2</td><td>10th of every month</td><td>30th</td><td>11th</td></tr>
+<tr><td><span class="dot" style="background:var(--c3)"></span>Card 3</td><td>15th of every month</td><td>4th or 5th of next month</td><td>16th</td></tr>
+</table></div>
+<p class="note">Your actual due dates may differ (month length shifts them by a day). Check one of your statements and adjust the gap below.</p>
+
+<h2 id="calculator">Try it: which card should you use?</h2>
+<p>Pick a purchase day. The page shows when each card bills you and how many interest-free days you get (dates use October 2026 as the example month).</p>
+<div class="ctl">
+<label>Purchase day: <span id="dv">12</span> <input id="day" type="range" min="1" max="31" value="12" aria-label="Purchase day of month"></label>
+<label>Days from statement to due date: <input id="gap" type="number" min="10" max="30" value="20" inputmode="numeric"></label>
+</div>
+<div class="res r" id="res" aria-live="polite"></div>
+
+<h3 style="margin-top:28px">Best card for every purchase day</h3>
+<div class="strip" id="strip"></div>
+<div class="legend"><span><span class="dot" style="background:var(--c1)"></span>Card 1</span><span><span class="dot" style="background:var(--c2)"></span>Card 2</span><span><span class="dot" style="background:var(--c3)"></span>Card 3</span><span>Tap a day to select it</span></div>
+<p class="note" id="insight" style="margin-top:12px"></p>
+
+<h2 id="interest">How interest really works</h2>
+<p>If you pay the <strong>total amount due</strong> by the due date, you pay no interest. If you pay anything less, even ₹1 less, three things happen:</p>
+<div class="terms">
+<div class="box"><h3>1. Interest from the purchase date</h3><p>Interest is charged on the unpaid amount, counted from the day you made each purchase, not from the due date. Rates are often about <strong>3% to 3.75% a month</strong>, roughly <strong>36% to 45% a year</strong>.</p></div>
+<div class="box"><h3>2. You lose the free days</h3><p>Until you clear the balance in full, <strong>new purchases also start charging interest from day one</strong>. The 20 to 50 interest-free days disappear.</p></div>
+<div class="box"><h3>3. Plus 18% GST</h3><p>GST of 18% is added on top of the interest. So 3.5% a month really costs you about 4.1%.</p></div>
+</div>
+
+<h3 style="margin-top:24px">Worked example (approximate)</h3>
+<div class="ex alt">
+<p>Your statement shows <strong>₹20,000</strong> total due and <strong>₹1,000</strong> minimum due. You pay only ₹1,000. Interest rate: 3.5% a month.</p>
+<ul>
+<li>₹19,000 stays unpaid and keeps collecting interest.</li>
+<li>Because interest runs from each purchase date, the next statement often shows about <strong>₹700 to ₹900</strong> in interest, plus about <strong>₹130 to ₹160</strong> GST on it.</li>
+<li>Anything new you buy this month also gets charged interest from the day you buy it.</li>
+<li>Keep paying only the minimum, and clearing that ₹20,000 can take <strong><span id="exMonths">years</span></strong> and cost about <strong><span id="exInt">₹—</span></strong> in interest and GST (see the estimate below).</li>
+</ul>
+</div>
+<p class="note">Figures are rounded estimates. Exact amounts depend on your bank's rate, purchase dates and how it calculates daily interest.</p>
+
+<div class="box calc" style="margin-top:18px">
+<h3>Estimate: the cost of paying only the minimum</h3>
+<p class="note">Assumes no new spending, the same rate every month, 18% GST on interest (optional) and a minimum payment of at least ₹200.</p>
+<div class="ctl">
+<label>Balance ₹ <input id="mBal" class="wide" type="number" min="500" max="10000000" step="500" value="20000" inputmode="numeric"></label>
+<label>Interest % per month <input id="mRate" type="number" min="0" max="6" step="0.05" value="3.5" inputmode="decimal"></label>
+<label>Minimum due % <input id="mMin" type="number" min="1" max="100" step="0.5" value="5" inputmode="decimal"></label>
+<label><input id="mGst" type="checkbox" checked> Add 18% GST on interest</label>
+</div>
+<div class="out" aria-live="polite">
+<div class="box"><p class="note" style="margin:0">Time to clear</p><div class="big" id="oMonths">—</div><p class="note" style="margin:4px 0 0" id="oYears"></p></div>
+<div class="box"><p class="note" style="margin:0">Total interest (+GST)</p><div class="big warn" id="oInt">—</div></div>
+<div class="box"><p class="note" style="margin:0">Total you pay</p><div class="big" id="oTotal">—</div></div>
+</div>
+<p class="note" style="margin-top:10px" id="oNote"></p>
+</div>
+
+<h2 id="fees">Fees and charges</h2>
+<p>Interest is not the only cost. These are common charges in India. Amounts vary a lot by bank and card, so check your card's schedule of charges.</p>
+<div class="terms">
+<div class="box"><h3>Joining and annual fee</h3><p>From ₹0 to a few thousand rupees a year. Often <strong>waived</strong> if you spend above a set amount in a year.</p></div>
+<div class="box"><h3>Late payment fee</h3><p>Usually a slab based on how much you owe, often a few hundred to over ₹1,000. Under RBI rules, the late fee and interest apply only if you're <strong>more than 3 days past the due date</strong>. Still, pay on time: don't treat those days as extra free time.</p></div>
+<div class="box"><h3>Cash withdrawal</h3><p>A fee, often about 2.5% to 3.5% of the amount (with a minimum), <strong>plus interest from day one</strong>. No free days at all. Avoid it.</p></div>
+<div class="box"><h3>Foreign currency markup</h3><p>About <strong>2% to 3.5%</strong> on purchases in other currencies, including many international websites, plus GST.</p></div>
+<div class="box"><h3>Over-limit fee</h3><p>If you go past your limit (only possible if you've opted in), a fee is often charged. You can keep this facility switched off.</p></div>
+<div class="box"><h3>Fuel surcharge</h3><p>About 1% at petrol pumps. Some cards refund it within a spending range.</p></div>
+<div class="box"><h3>GST on everything</h3><p><strong>18% GST</strong> is added to fees and interest. A ₹500 fee really costs ₹590.</p></div>
+<div class="box"><h3>Others to watch</h3><p>EMI processing fees, card replacement, reward redemption fees, and charges on rent or wallet loads on some cards.</p></div>
+</div>
+
+<h2 id="score">Your credit score (CIBIL and others)</h2>
+<p>A <strong>credit score</strong> is a number from <strong>300 to 900</strong> that shows how reliably you repay. Credit bureaus in India (CIBIL, Experian, Equifax, CRIF High Mark) build it from your loan and card history. A score of about <strong>750 or more</strong> is generally seen as good.</p>
+<div class="terms">
+<div class="box"><h3 class="good">Helps your score</h3><ul><li>Paying every bill on time, every month</li><li>Keeping utilisation low (under about 30%)</li><li>Keeping older cards open: a longer history helps</li></ul></div>
+<div class="box"><h3 class="warn">Hurts your score</h3><ul><li>Late or missed payments</li><li>Using most of your limit</li><li>Applying for many cards or loans in a short time</li><li>Settling a card for less than you owe</li></ul></div>
+<div class="box"><h3>Why it matters</h3><p>Banks check it for home, car, personal and education loans. A good score can mean faster approval, a <strong>lower interest rate</strong> and higher limits.</p></div>
+</div>
+
+<h2 id="rewards">Rewards, cashback and EMI</h2>
+<div class="terms">
+<div class="box"><h3>Reward points</h3><p>You earn points per ₹ spent, often a small percentage of value. Redeem them for vouchers, flights or statement credit. Points can expire, and some categories (fuel, rent, wallets) may earn nothing.</p></div>
+<div class="box"><h3>Cashback</h3><p>A percentage of your spend comes back as credit on your statement, often with monthly caps. Simple and easy to value.</p></div>
+<div class="box"><h3>"No-cost" EMI</h3><p>Split a big purchase into monthly payments. The interest is usually offset by a discount from the seller, but a <strong>processing fee + 18% GST</strong> often still applies, and you may lose an upfront cash discount.</p></div>
+<div class="box"><h3>EMI blocks your limit</h3><p>Convert a ₹60,000 phone to EMI and ₹60,000 of your limit is blocked. It frees up slowly as you pay each instalment, which also raises your utilisation.</p></div>
+</div>
+<p class="warn" style="margin-top:14px">Rewards are worth a few percent. Interest is worth about 40% a year. Never carry a balance to chase points.</p>
+
+<h2 id="safety">Stay safe</h2>
+<ul>
+<li><strong>Never share your OTP, CVV or PIN</strong> with anyone, including people claiming to be from your bank. Banks never ask for them.</li>
+<li>In your bank app, <strong>switch off international, online or contactless use</strong> when you don't need it. Turn it on only when needed.</li>
+<li><strong>Set transaction limits</strong> for online, contactless and ATM use.</li>
+<li><strong>Lost card or strange charge? Block the card immediately</strong> in the app or by calling the bank. Reporting quickly (ideally within 3 days) usually limits your liability.</li>
+<li><strong>Read every statement</strong> and SMS alert. Dispute charges you don't recognise.</li>
+<li>Pay only on trusted sites and apps. Don't save card details on sites you rarely use.</li>
+<li>For cyber fraud, you can also call the national helpline <strong>1930</strong> or report at cybercrime.gov.in.</li>
+</ul>
+
+<h2 id="fit">Is a credit card right for you?</h2>
+<div class="two">
+<div class="box" style="border-top:5px solid var(--good)"><h3>Good fit if you…</h3><ul><li>Have steady income and can pay the full bill every month</li><li>Track your spending and like reminders and auto-pay</li><li>Want to build a credit score for future loans</li><li>Want rewards, purchase protection or an emergency backup</li></ul></div>
+<div class="box" style="border-top:5px solid var(--bad)"><h3>Avoid it (for now) if you…</h3><ul><li>Often run short before payday</li><li>Already struggle to pay loans or bills</li><li>Tend to overspend when money feels "free"</li><li>Plan to use it for cash withdrawals or to carry a balance</li></ul></div>
+</div>
+
+<h2 id="habits">Habits that keep it free</h2>
+<ul>
+<li>Pay the <strong>total amount due</strong>, not the minimum. Set up auto-debit for the full amount.</li>
+<li>Set one reminder per card, 3 days before each due date: the 18th, 27th and 2nd for your cards.</li>
+<li>Pay a day early. Bank transfers over a weekend or holiday can post late.</li>
+<li>Cash withdrawals have no grace period. Interest starts the same day.</li>
+<li>Keep usage under about 30% of your limit. Pay early in the cycle if you spend more.</li>
+<li>Only spend what's already in your bank account. Treat the card like a debit card that pays later.</li>
+<li>Check your statement and credit report a few times a year. Checking your own score doesn't lower it.</li>
+<li>Don't apply for many cards at once. Space applications by a few months.</li>
+<li>Read the fee schedule before you accept a new card or an EMI offer.</li>
+<li class="warn">Interest-free days only apply if the previous statement was paid in full.</li>
+</ul>
+
+<h2 id="faq">FAQ</h2>
+<details><summary>Does checking my own credit score lower it?</summary><p>No. Checking your own score is a "soft" check and doesn't affect it. Only "hard" checks, when you apply for a loan or card, can lower it a little.</p></details>
+<details><summary>What if I miss the due date by a day?</summary><p>Pay right away. Under RBI rules, late fees and interest apply only if you're more than 3 days past due, and it shouldn't be reported as late within that window. Paying within that window usually avoids both. Still, don't rely on it: set up auto-pay and reminders.</p></details>
+<details><summary>Should I close my old card?</summary><p>Usually not, if it has no or low annual fee. An old card adds to your credit history and total limit, which keeps utilisation low. Close it if the fee isn't worth it, after paying it off fully.</p></details>
+<details><summary>Is paying the minimum due enough?</summary><p>It keeps you from being marked late, but interest of about 3–3.75% a month (plus GST) starts on the rest, and new purchases lose their free days. Pay the total whenever you can.</p></details>
+<details><summary>How many credit cards should I have?</summary><p>One or two is enough for most people. More cards can help with timing and rewards, but only if you can track every due date.</p></details>
+<details><summary>Can I pay before the statement date?</summary><p>Yes. Paying early frees up your limit and lowers the balance that gets reported, which helps utilisation. You'll still get a statement for anything left.</p></details>
+</main>
+<footer>
+<p><strong>General information, not financial advice.</strong> Rates and fees vary by bank; check your card's terms.</p>
+</footer>
+<script>
+const cards=[{n:"Card 1",s:1,c:"var(--c1)"},{n:"Card 2",s:10,c:"var(--c2)"},{n:"Card 3",s:15,c:"var(--c3)"}];
+const M=9,Y=2026,MS=864e5; // Oct 2026
+const $=id=>document.getElementById(id);
+const fmt=d=>d.toLocaleDateString("en-IN",{day:"numeric",month:"short"});
+function calc(c,day,gap){const p=new Date(Y,M,day);let st=new Date(Y,M,c.s);if(day>c.s)st=new Date(Y,M+1,c.s);
+const due=new Date(Y,st.getMonth(),st.getDate()+gap);return{st,due,free:Math.round((due-p)/MS)}}
+function gapV(){return Math.min(30,Math.max(10,Math.round(+$("gap").value)||20))}
+function best(day,g){return cards.map((c,i)=>({i,f:calc(c,day,g).free})).sort((a,b)=>b.f-a.f)[0].i}
+function render(){const day=+$("day").value,g=gapV();
+$("dv").textContent=day;
+const r=cards.map(c=>({c,...calc(c,day,g)})),b=best(day,g);
+$("res").innerHTML=r.map((x,i)=>`<div class="box ${i===b?"best":""}" style="border-top-color:${x.c.c}"><h3>${x.c.n}${i===b?'<span class="tag">Best</span>':""}</h3><div class="big">${x.free}</div><p class="note">interest-free days</p><p>Billed on <strong>${fmt(x.st)}</strong><br>Pay by <strong>${fmt(x.due)}</strong></p></div>`).join("");
+$("strip").innerHTML=Array.from({length:31},(_,k)=>{const d=k+1;return`<button type="button" style="background:${cards[best(d,g)].c}" class="${d===day?"sel":""}" data-d="${d}" aria-label="Day ${d}, best is ${cards[best(d,g)].n}">${d}</button>`}).join("");
+const runs=[];let st=1;for(let d=2;d<=32;d++){if(d===32||best(d,g)!==best(d-1,g)){runs.push(cards[best(st,g)].n+": "+(st===d-1?st:st+"-"+(d-1)));st=d}}
+$("insight").textContent="Best card by purchase day: "+runs.join(", ")+" (with a "+g+"-day gap).";
+}
+$("day").oninput=render;$("gap").oninput=render;
+$("strip").onclick=e=>{const t=e.target.closest("button");if(t&&t.dataset.d){$("day").value=t.dataset.d;render()}};
+render();
+
+/* Minimum-payment estimate */
+const inr=n=>"₹"+Math.round(n).toLocaleString("en-IN");
+function minPay(bal,ratePct,minPct,gst){const r=ratePct/100*(gst?1.18:1),m=minPct/100,FLOOR=200;let months=0,interest=0,paid=0;
+while(bal>0.5&&months<600){const i=bal*r;interest+=i;bal+=i;const p=Math.min(bal,Math.max(bal*m,FLOOR));bal-=p;paid+=p;months++}
+return{months,interest,paid,done:bal<=0.5,left:bal}}
+function num(id,lo,hi,def){const v=parseFloat($(id).value);return isFinite(v)?Math.min(hi,Math.max(lo,v)):def}
+function yrs(m){const y=Math.floor(m/12),mo=m%12;return(y?y+" yr"+(y>1?"s":""):"")+(y&&mo?" ":"")+(mo?mo+" mo":"")}
+function renderMin(){const bal=num("mBal",500,1e7,20000),rate=num("mRate",0,6,3.5),mn=num("mMin",1,100,5),g=$("mGst").checked;
+const o=minPay(bal,rate,mn,g);
+if(o.done){$("oMonths").textContent=o.months+" months";$("oYears").textContent="about "+yrs(o.months);$("oInt").textContent=inr(o.interest);$("oTotal").textContent=inr(o.paid);
+$("oNote").textContent="Estimate only. Paying the full "+inr(bal)+" by the due date would cost ₹0 in interest. Interest here is about "+Math.round(o.interest/bal*100)+"% of the original balance.";}
+else{const grows=o.left>bal;$("oMonths").textContent=grows?"Never":"50+ years";$("oYears").textContent=grows?"the balance keeps growing":"the minimum barely covers interest";$("oInt").textContent="Endless";$("oTotal").textContent="—";
+$("oNote").textContent="Estimate only. At these settings the minimum payment "+(grows?"is smaller than the monthly interest, so the debt grows":"hardly reduces the balance")+". Pay more than the minimum.";}
+}
+["mBal","mRate","mMin","mGst"].forEach(id=>$(id).addEventListener("input",renderMin));
+renderMin();
+(function(){const o=minPay(20000,3.5,5,true);$("exMonths").textContent="about "+yrs(o.months);$("exInt").textContent=inr(o.interest)})();
+
+/* Theme toggle (remembers choice) */
+(function(){const root=document.documentElement,KEY="cc-theme";let saved=null;try{saved=localStorage.getItem(KEY)}catch(e){}
+if(saved)root.dataset.theme=saved;
+$("theme").onclick=()=>{const cur=root.dataset.theme||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");const next=cur==="dark"?"light":"dark";root.dataset.theme=next;try{localStorage.setItem(KEY,next)}catch(e){}};})();
+
+/* Highlight current section in the table of contents */
+(function(){if(!("IntersectionObserver" in window))return;const links=[...document.querySelectorAll(".toc a")],map=new Map(links.map(a=>[a.getAttribute("href").slice(1),a]));
+const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){links.forEach(l=>l.classList.remove("on"));const a=map.get(e.target.id);if(a){a.classList.add("on");const ol=a.closest("ol");ol.scrollLeft=a.offsetLeft-ol.clientWidth/2+a.offsetWidth/2}}})},{rootMargin:"-70px 0px -70% 0px"});
+map.forEach((a,id)=>{const el=$(id);if(el)io.observe(el)})})();
+</script>
+</body>
+</html>
